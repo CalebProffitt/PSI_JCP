@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CS_311_Project2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="cbND" VerticalAlignment="Top" HorizontalAlignment="Left" ShowGridLines="True" Width="800" Height="424" Margin="0,0,-4,0">
+    <Grid x:Name="grid" VerticalAlignment="Top" HorizontalAlignment="Left" ShowGridLines="True" Width="800" Height="424" Margin="0,0,-4,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1.2*" />
             <ColumnDefinition />
@@ -65,14 +65,14 @@
         <TextBlock x:Name="txtRD" Grid.Column="1" HorizontalAlignment="Left" Margin="10,132,0,0" Text="Renal Disease:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtAMS" Grid.Column="1" HorizontalAlignment="Left" Margin="10,152,0,0" Text="Altered Mental Status:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtPE" Grid.Column="1" HorizontalAlignment="Left" Margin="10,172,0,0" Text="Pleural Effusion on x-ray:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cbNHR" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,32,0,0" VerticalAlignment="Top" Click="cbNHR_Click"/>
-        <CheckBox x:Name="cbND1" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,52,0,0" VerticalAlignment="Top" Click="cbND_Click"/>
-        <CheckBox x:Name="cdLD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,72,0,0" VerticalAlignment="Top" Click="cbLD_Click"/>
-        <CheckBox x:Name="cdCHF" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,92,0,0" VerticalAlignment="Top" Click="cbCHF_Click"/>
-        <CheckBox x:Name="cdCD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,112,0,0" VerticalAlignment="Top" Click="cbCD_Click"/>
-        <CheckBox x:Name="cbRD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,132,0,0" VerticalAlignment="Top" Click="cbRD_Click"/>
-        <CheckBox x:Name="cbAMS" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,152,0,0" VerticalAlignment="Top" Click="cbAMS_Click"/>
-        <CheckBox x:Name="cdPE" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,172,0,0" VerticalAlignment="Top" Click="cbPE_Click"/>
+        <CheckBox x:Name="cbNHR" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,32,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbND" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,52,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbLD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,72,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbCHF" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,92,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbCD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,112,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbRD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,132,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbAMS" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,152,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbPE" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,172,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnCalculate" Content="Calculate" FontSize="30" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="93" Width="323" Click="btnCalculate_Click"/>
         <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Margin="10,10,10,10" Grid.Column="1">
             <TextBlock x:Name="txtblkOutput" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" TextAlignment="Left" FontWeight="Bold" Height="93" Width="323"/>

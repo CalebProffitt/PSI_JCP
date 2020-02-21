@@ -27,6 +27,9 @@ namespace CS_311_Project2
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
+            //collect and store input data
+
+            //base
             int age = AgeValue(txtAge.Text);
             int RR = RRValue(txtRR.Text);
             int SBP = SBPValue(txtSBP.Text);
@@ -34,15 +37,26 @@ namespace CS_311_Project2
             int pH = Convert.ToInt32(PHValue(txtPH.Text));
             int sodium = SodiumValue(txtSodium.Text);
             int hema = HemaValue(txtHema.Text);
+            //radio buttons
             int sex = SexValue(rdoMale);
             int temp = TempValue(rdoCelcius, txtTemp.Text);
             int BUN = BUNValue(rdoBUNmg_dL, txtBUN.Text);
             int glucose = GlucoseValue(rdoGLUCOSEmg_dL, txtGlucose.Text);
             int PPO = PPOValue(rdoPPOmmHg, txtPPO.Text);
+            //checkboxes
+            int NHR = NHRValue(cbNHR);
+            int ND = NDValue(cbND);
+            int LD = LDValue(cbLD);
+            int CHF = CHFValue(cbCHF);
+            int CD = CDValue(cbCD);
+            int RD = RDValue(cbRD);
+            int AMS = AMSValue(cbAMS);
+            int PE = PEValue(cbPE);
 
+            //calculate total PSI number
+            int intOutput = age + sex + RR + SBP + temp + pulse + pH + BUN + sodium + glucose + hema + PPO + NHR + ND + LD + CHF + CD + RD + AMS + PE;
 
-            int intOutput = age + sex + RR + SBP + temp + pulse + pH + BUN + sodium + glucose + hema + PPO;
-
+            //determine the class level
             if (intOutput == 0)
             {
                 MessageBox.Show("Class 1: Recommend outpatient care");
@@ -61,7 +75,7 @@ namespace CS_311_Project2
             }
             else if (intOutput > 130)
             {
-                MessageBox.Show("Class 5: Recommend inpatient admission (check for sepsis");
+                MessageBox.Show("Class 5: Recommend inpatient admission (check for sepsis)");
             }
             else
             {
@@ -71,6 +85,7 @@ namespace CS_311_Project2
             txtblkOutput.Text = "Total calculated PSI number: " + Convert.ToString(intOutput);
         }
 
+        //methods for basic and radio button
         static int AgeValue(string txtAge)
         {
             int age = Convert.ToInt32(txtAge);
@@ -235,44 +250,101 @@ namespace CS_311_Project2
             }
         }
 
-        private void cbNHR_Click(object sender, RoutedEventArgs e)
+        //methods for checkboxes
+        static int NHRValue(CheckBox cbNHR)
         {
-          
+            if (cbNHR.IsChecked == true)
+            {
+                return 10;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbND_Click(object sender, RoutedEventArgs e)
+        static int NDValue(CheckBox cbND)
         {
-
+            if (cbND.IsChecked == true)
+            {
+                return 30;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbLD_Click(object sender, RoutedEventArgs e)
+        static int LDValue(CheckBox cbLD)
         {
-
+            if (cbLD.IsChecked == true)
+            {
+                return 20;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbCHF_Click(object sender, RoutedEventArgs e)
+        static int CHFValue(CheckBox cbCHF)
         {
-
+            if (cbCHF.IsChecked == true)
+            {
+                return 10;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbCD_Click(object sender, RoutedEventArgs e)
+        static int CDValue(CheckBox cbCD)
         {
-
+            if (cbCD.IsChecked == true)
+            {
+                return 10;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbRD_Click(object sender, RoutedEventArgs e)
+        static int RDValue(CheckBox cbRD)
         {
-
+            if (cbRD.IsChecked == true)
+            {
+                return 10;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbAMS_Click(object sender, RoutedEventArgs e)
+        static int AMSValue(CheckBox cbAMS)
         {
-
+            if (cbAMS.IsChecked == true)
+            {
+                return 20;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
-        private void cbPE_Click(object sender, RoutedEventArgs e)
+        static int PEValue(CheckBox cbPE)
         {
-
+            if (cbPE.IsChecked == true)
+            {
+                return 10;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }
