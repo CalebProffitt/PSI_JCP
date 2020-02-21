@@ -1,0 +1,17 @@
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CS_311_Project2.exe
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CS_311_Project2.deps.json
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CS_311_Project2.runtimeconfig.json
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CS_311_Project2.runtimeconfig.dev.json
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CS_311_Project2.dll
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CS_311_Project2.pdb
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.csprojAssemblyReference.cache
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2_MarkupCompile.cache
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2_MarkupCompile.lref
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.g.resources
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.AssemblyInfoInputs.cache
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.AssemblyInfo.cs
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.dll
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.pdb
