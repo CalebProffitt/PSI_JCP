@@ -73,9 +73,9 @@
         <CheckBox x:Name="cbRD" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,132,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="cbAMS" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,152,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="cdPE" Content="Yes" Grid.Column="1" HorizontalAlignment="Left" Margin="172,172,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="93" Width="323"/>
+        <Button x:Name="btnCalculate" Content="Calculate" FontSize="30" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="93" Width="323" Click="btnCalculate_Click"/>
         <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Margin="10,10,10,10" Grid.Column="1">
-            <TextBlock x:Name="txtblkOutput" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" TextAlignment="Left" FontWeight="Bold" Height="93" Width="323"/>
+            <TextBlock x:Name="txtblkOutput" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" TextAlignment="Left" FontWeight="Bold" Height="93" Width="323"/>
         </Border>
     </Grid>
 </Window>
