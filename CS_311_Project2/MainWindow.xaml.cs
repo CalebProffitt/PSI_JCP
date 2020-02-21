@@ -34,15 +34,59 @@ namespace CS_311_Project2
             int pH = Convert.ToInt32(PHValue(txtPH.Text));
             int sodium = SodiumValue(txtSodium.Text);
             int hema = HemaValue(txtHema.Text);
+            int sex = SexValue(rdoMale);
+            int temp = TempValue(rdoCelcius, txtTemp.Text);
+            int BUN = BUNValue(rdoBUNmg_dL, txtBUN.Text);
+            int glucose = GlucoseValue(rdoGLUCOSEmg_dL, txtGlucose.Text);
+            int PPO = PPOValue(rdoPPOmmHg, txtPPO.Text);
 
-            int intOutput = age + RR + SBP + pulse + pH + sodium + hema;
-            txtblkOutput.Text = Convert.ToString(intOutput);
+
+            int intOutput = age + sex + RR + SBP + temp + pulse + pH + BUN + sodium + glucose + hema + PPO;
+
+            if (intOutput == 0)
+            {
+                MessageBox.Show("Class 1: Recommend outpatient care");
+            }
+            else if (intOutput <= 70)
+            {
+                MessageBox.Show("Class 2: Recommend outpatient care");
+            }
+            else if (intOutput >= 71 && intOutput <= 90)
+            {
+                MessageBox.Show("Class 3: Recommend outpatient or observation admission");
+            }
+            else if (intOutput >= 91 && intOutput <= 130)
+            {
+                MessageBox.Show("Class 4: Recommend inpatient admission");
+            }
+            else if (intOutput > 130)
+            {
+                MessageBox.Show("Class 5: Recommend inpatient admission (check for sepsis");
+            }
+            else
+            {
+                MessageBox.Show("Data error");
+            }
+
+            txtblkOutput.Text = "Total calculated PSI number: " + Convert.ToString(intOutput);
         }
 
         static int AgeValue(string txtAge)
         {
             int age = Convert.ToInt32(txtAge);
             return age;
+        }
+
+        static int SexValue(RadioButton rdoMale)
+        {
+            if (rdoMale.IsChecked == true)
+            {
+                return 0;
+            }
+            else
+            {
+                return -10;
+            }
         }
 
         static int RRValue(string txtRR)
@@ -64,6 +108,23 @@ namespace CS_311_Project2
             if (SBP < 90)
             {
                 return 20;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        static int TempValue(RadioButton rdoCelcius, string txtTemp)
+        {
+            int tempVal = Convert.ToInt32(txtTemp);
+            if (rdoCelcius.IsChecked == true && (tempVal < 35 || tempVal > 39.9))
+            {
+                return 15;
+            }
+            else if (rdoCelcius.IsChecked == false && (tempVal < 95 || tempVal > 103.8))
+            {
+                return 15;
             }
             else
             {
@@ -97,12 +158,46 @@ namespace CS_311_Project2
             }
         }
 
+        static int BUNValue(RadioButton rdoBUNmg_dL, string txtBUN)
+        {
+            int BUNVal = Convert.ToInt32(txtBUN);
+            if (rdoBUNmg_dL.IsChecked == true && BUNVal >= 30)
+            {
+                return 20;
+            }
+            else if (rdoBUNmg_dL.IsChecked == false && BUNVal >= 11)
+            {
+                return 20;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
         static int SodiumValue(string txtSodium)
         {
             int sodium = Convert.ToInt32(txtSodium);
             if (sodium < 130)
             {
                 return 20;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        static int GlucoseValue(RadioButton rdoGLUCOSEmg_dL, string txtGlucose)
+        {
+            int GlucoseVal = Convert.ToInt32(txtGlucose);
+            if (rdoGLUCOSEmg_dL.IsChecked == true && GlucoseVal >= 250)
+            {
+                return 10;
+            }
+            else if (rdoGLUCOSEmg_dL.IsChecked == false && GlucoseVal >= 14)
+            {
+                return 10;
             }
             else
             {
@@ -121,6 +216,63 @@ namespace CS_311_Project2
             {
                 return 0;
             }
+        }
+
+        static int PPOValue(RadioButton rdoPPOmmHg, string txtPPO)
+        {
+            int PPOVal = Convert.ToInt32(txtPPO);
+            if (rdoPPOmmHg.IsChecked == true && PPOVal < 60)
+            {
+                return 10;
+            }
+            else if (rdoPPOmmHg.IsChecked == false && PPOVal < 8)
+            {
+                return 10;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        private void cbNHR_Click(object sender, RoutedEventArgs e)
+        {
+          
+        }
+
+        private void cbND_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbLD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbCHF_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbCD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbRD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbAMS_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cbPE_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
