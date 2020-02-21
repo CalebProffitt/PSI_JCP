@@ -15,3 +15,5 @@ C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\C
 C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.AssemblyInfo.cs
 C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.dll
 C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.pdb
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\caleb\Desktop\CS_311_Project2\CS_311_Project2\obj\Debug\netcoreapp3.1\CS_311_Project2.csproj.CopyComplete

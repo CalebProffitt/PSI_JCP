@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CS_311_Project2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="grid" VerticalAlignment="Top" HorizontalAlignment="Left" ShowGridLines="True" Width="800" Height="424" Margin="0,0,-4,0">
+    <Grid x:Name="grid" VerticalAlignment="Top" HorizontalAlignment="Left" ShowGridLines="False" Width="800" Height="424" Margin="0,0,-4,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1.2*" />
             <ColumnDefinition />
